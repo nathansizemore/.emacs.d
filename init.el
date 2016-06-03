@@ -26,36 +26,48 @@
 
 ;; Packages that must exist
 (defvar my-packages
-  '())
-
-;; On OS X, an Emacs instance started from the graphical user
-;; interface will have a different environment than a shell in a
-;; terminal window, because OS X does not run a shell during the
-;; login. Obviously this will lead to unexpected results when
-;; calling external utilities like make from Emacs.
-;; This library works around this problem by copying important
-;; environment variables from the user's shell.
-;; https://github.com/purcell/exec-path-from-shell
-(if (eq system-type 'darwin)
-  (add-to-list 'my-packages 'exec-path-from-shell))
+  '(company
+    company-tern
+    csharp-mode
+    exec-path-from-shell
+    flatland-theme
+    flycheck
+    flycheck-rust
+    jquery-doc
+    js2-mode
+    markdown-mode
+    neotree
+    racer
+    rust-mode
+    swift-mode
+    toml-mode))
 
 ;; Iterate over the list of packages and install
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
-;; Setup exec-path-from-shell package for Mac
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize)
+;; Environment variables
+(exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-envs
-   '("PATH" "CARGO_HOME" "RUST_SRC_PATH" "JAVA_HOME")))
+   '("PATH" "CARGO_HOME" "RUST_SRC_PATH" "JAVA_HOME"))
 
 ;; Customizations folder
 (defvar my-customizations-folder
   (concat user-emacs-directory "customizations/"))
 ;; Customizations
 (defvar my-customizations
-  '())
+  '("company"
+    "csharp"
+    "editing"
+    "html"
+    "javascript"
+    "markdown"
+    "misc"
+    "navigation"
+    "rust"
+    "shell"
+    "ui"))
 ;; Load customizations
 (dolist (c my-customizations)
   (load (concat my-customizations-folder c ".el")))
