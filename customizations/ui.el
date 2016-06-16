@@ -9,7 +9,7 @@
   (scroll-bar-mode -1))
 ;;
 ;; Decrease font size and increase line spacing
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 90)
 (setq-default line-spacing 0.1)
 ;;
 ;; Turn of blinking and bell
