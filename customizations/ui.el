@@ -8,7 +8,6 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 ;;
-;; Decrease font size and increase line spacing
 (set-face-attribute 'default nil :height 90)
 (setq-default line-spacing 0.1)
 ;;
@@ -20,8 +19,8 @@
 (load-theme 'flatland t)
 ;;
 ;; Transparent background emacs-GUI
-(set-frame-parameter (selected-frame) 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
+(set-frame-parameter (selected-frame) 'alpha '(90 90))
+(add-to-list 'default-frame-alist '(alpha 90 90))
 ;;
 ;; Line numbers
 (global-linum-mode 1)

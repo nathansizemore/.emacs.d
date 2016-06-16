@@ -22,3 +22,7 @@
 ;; Tabs vs spaces
 (setq tab-width 4
       indent-tabs-mode nil)
+;;
+;; Proper usage of Home/End keys
+(define-key global-map [home] 'back-to-indentation)
+(define-key global-map [end] 'end-of-line)

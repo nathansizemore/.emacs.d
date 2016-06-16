@@ -37,6 +37,7 @@
     js2-mode
     markdown-mode
     neotree
+    omnisharp
     racer
     rust-mode
     swift-mode
