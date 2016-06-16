@@ -9,7 +9,7 @@
   (scroll-bar-mode -1))
 ;;
 ;; Decrease font size and increase line spacing
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 110)
 (setq-default line-spacing 0.1)
 ;;
 ;; Turn of blinking and bell
@@ -20,8 +20,8 @@
 (load-theme 'flatland t)
 ;;
 ;; Transparent background emacs-GUI
-(set-frame-parameter (selected-frame) 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
+(set-frame-parameter (selected-frame) 'alpha '(90 90))
+(add-to-list 'default-frame-alist '(alpha 90 90))
 ;;
 ;; Line numbers
 (global-linum-mode 1)
