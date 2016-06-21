@@ -26,7 +26,8 @@
 
 ;; Packages that must exist
 (defvar my-packages
-  '(company
+  '(arduino-mode
+    company
     company-tern
     csharp-mode
     exec-path-from-shell
