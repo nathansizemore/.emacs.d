@@ -60,7 +60,8 @@
   (concat user-emacs-directory "customizations/"))
 ;; Customizations
 (defvar my-customizations
-  '("company"
+  '("c"
+    "company"
     "csharp"
     "editing"
     "html"
