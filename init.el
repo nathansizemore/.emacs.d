@@ -36,6 +36,7 @@
     jquery-doc
     js2-mode
     markdown-mode
+    nasm-mode
     neotree
     omnisharp
     racer
@@ -65,6 +66,7 @@
     "javascript"
     "markdown"
     "misc"
+    "nasm"
     "navigation"
     "rust"
     "shell"
