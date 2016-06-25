@@ -34,6 +34,7 @@
     flatland-theme
     flycheck
     flycheck-rust
+    go-mode
     jquery-doc
     js2-mode
     markdown-mode
@@ -59,7 +60,8 @@
   (concat user-emacs-directory "customizations/"))
 ;; Customizations
 (defvar my-customizations
-  '("company"
+  '("c"
+    "company"
     "csharp"
     "editing"
     "html"

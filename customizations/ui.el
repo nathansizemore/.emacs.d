@@ -30,3 +30,8 @@
 ;;
 ;; Column numbers
 (setq column-number-mode t)
+;;
+;; Window size
+(setq frame-resize-pixelwise t)
+(dotimes (n 3)
+  (toggle-frame-maximized))
