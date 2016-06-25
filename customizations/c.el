@@ -1,6 +1,4 @@
-;; C type shit
+;; C style stuff
 
-(add-hook 'c-mode-hook  #'company-mode)
-(add-hook 'c-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
+(setq c-default-style "bsd"
+          c-basic-offset 4)
