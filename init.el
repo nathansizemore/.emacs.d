@@ -37,10 +37,12 @@
     go-mode
     jquery-doc
     js2-mode
+    llvm-mode
     markdown-mode
     nasm-mode
     neotree
     omnisharp
+    php-mode
     racer
     rust-mode
     swift-mode
