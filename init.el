@@ -33,7 +33,6 @@
     exec-path-from-shell
     flatland-theme
     flycheck
-    flycheck-rust
     go-mode
     jquery-doc
     js2-mode
@@ -56,11 +55,12 @@
 ;; Environment variables
 (exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-envs
-   '("PATH" "CARGO_HOME" "RUST_SRC_PATH" "JAVA_HOME"))
+   '("PATH" "JAVA_HOME" "CARGO_HOME" "RUST_SRC_PATH"))
 
 ;; Customizations folder
 (defvar my-customizations-folder
   (concat user-emacs-directory "customizations/"))
+
 ;; Customizations
 (defvar my-customizations
   '("c"
@@ -76,6 +76,7 @@
     "rust"
     "shell"
     "ui"))
+
 ;; Load customizations
 (dolist (c my-customizations)
   (load (concat my-customizations-folder c ".el")))

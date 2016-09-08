@@ -18,6 +18,8 @@
 ;;
 ;; Flycheck for all
 (add-hook 'after-init-hook #'global-flycheck-mode)
+;; Disable stupid FlyCheck with rust. Not great right now.
+(setq-default flycheck-disabled-checkers '(rust-cargo))
 ;;
 ;; Tabs vs spaces
 (setq tab-width 4
