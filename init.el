@@ -43,7 +43,6 @@
     neotree
     omnisharp
     php-mode
-    racer
     rust-mode
     swift-mode
     systemd
