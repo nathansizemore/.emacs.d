@@ -27,6 +27,7 @@
 ;; Packages that must exist
 (defvar my-packages
   '(arduino-mode
+    cargo
     company
     company-tern
     csharp-mode
@@ -45,6 +46,7 @@
     racer
     rust-mode
     swift-mode
+    systemd
     toml-mode))
 
 ;; Iterate over the list of packages and install
