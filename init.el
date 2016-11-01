@@ -7,8 +7,8 @@
 
 ;; Define package repositories
 (require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;; (add-to-list 'package-archives
+;;              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
@@ -28,25 +28,33 @@
 (defvar my-packages
   '(arduino-mode
     cargo
+    cmake-mode
     company
     company-tern
     csharp-mode
     exec-path-from-shell
     flatland-theme
+    flatland-black-theme
     flycheck
     go-mode
     jquery-doc
     js2-mode
     llvm-mode
+    lush-theme
     markdown-mode
+    material-theme
+    multi
     nasm-mode
     neotree
-    omnisharp
+    obsidian-theme
     php-mode
     rust-mode
+    spacegray-theme
     swift-mode
     systemd
-    toml-mode))
+    toml-mode
+    web-mode
+    yaml-mode))
 
 ;; Iterate over the list of packages and install
 (dolist (p my-packages)
@@ -54,9 +62,9 @@
     (package-install p)))
 
 ;; Environment variables
-(exec-path-from-shell-initialize)
-  (exec-path-from-shell-copy-envs
-   '("PATH" "JAVA_HOME" "CARGO_HOME" "RUST_SRC_PATH"))
+;; (exec-path-from-shell-initialize)
+;;   (exec-path-from-shell-copy-envs
+;;    '("PATH" "JAVA_HOME" "CARGO_HOME" "RUST_SRC_PATH"))
 
 ;; Customizations folder
 (defvar my-customizations-folder
@@ -81,3 +89,53 @@
 ;; Load customizations
 (dolist (c my-customizations)
   (load (concat my-customizations-folder c ".el")))
+
+;; Tooltips are stupid
+(tooltip-mode nil)
+(setq show-help-function nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   (vector "#ffffff" "#bf616a" "#B4EB89" "#ebcb8b" "#89AAEB" "#C189EB" "#89EBCA" "#232830"))
+ '(custom-enabled-themes (quote (obsidian)))
+ '(custom-safe-themes
+   (quote
+    ("a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "0820d191ae80dcadc1802b3499f84c07a09803f2cb90b343678bdb03d225b26b" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "8453c6ba2504874309bdfcda0a69236814cefb860a528eb978b5489422cb1791" "d8f76414f8f2dcb045a37eb155bfaa2e1d17b6573ed43fb1d18b936febc7bbc2" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" default)))
+ '(fci-rule-color "#343d46")
+ '(hl-sexp-background-color "#1c1f26")
+ '(neo-hidden-regexp-list
+   (quote
+    ("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.meta$")))
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#bf616a")
+     (40 . "#DCA432")
+     (60 . "#ebcb8b")
+     (80 . "#B4EB89")
+     (100 . "#89EBCA")
+     (120 . "#89AAEB")
+     (140 . "#C189EB")
+     (160 . "#bf616a")
+     (180 . "#DCA432")
+     (200 . "#ebcb8b")
+     (220 . "#B4EB89")
+     (240 . "#89EBCA")
+     (260 . "#89AAEB")
+     (280 . "#C189EB")
+     (300 . "#bf616a")
+     (320 . "#DCA432")
+     (340 . "#ebcb8b")
+     (360 . "#B4EB89"))))
+ '(vc-annotate-very-old-color nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

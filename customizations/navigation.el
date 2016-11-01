@@ -1,5 +1,7 @@
 ;; Navigation customizations
 
+;; Width
+(setq neo-window-width 30)
 ;; Neotree, it rocks!
 (neotree-toggle)
 ;; Default directory
