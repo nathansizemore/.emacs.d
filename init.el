@@ -7,8 +7,6 @@
 
 ;; Define package repositories
 (require 'package)
-;; (add-to-list 'package-archives
-;;              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
@@ -32,24 +30,18 @@
     company
     company-tern
     csharp-mode
-    exec-path-from-shell
     flatland-theme
-    flatland-black-theme
     flycheck
     go-mode
     jquery-doc
     js2-mode
     llvm-mode
-    lush-theme
     markdown-mode
-    material-theme
     multi
     nasm-mode
     neotree
-    obsidian-theme
     php-mode
     rust-mode
-    spacegray-theme
     swift-mode
     systemd
     toml-mode
@@ -60,11 +52,6 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
-
-;; Environment variables
-;; (exec-path-from-shell-initialize)
-;;   (exec-path-from-shell-copy-envs
-;;    '("PATH" "JAVA_HOME" "CARGO_HOME" "RUST_SRC_PATH"))
 
 ;; Customizations folder
 (defvar my-customizations-folder
