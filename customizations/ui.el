@@ -8,7 +8,7 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 ;;
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 100)
 (setq-default line-spacing 0.1)
 ;;
 ;; Turn of blinking and bell
