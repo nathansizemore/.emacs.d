@@ -8,7 +8,7 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 ;;
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 120)
 (setq-default line-spacing 0.1)
 ;;
 ;; Turn of blinking and bell
@@ -19,8 +19,8 @@
 (load-theme 'flatland t)
 ;;
 ;; Transparent background emacs-GUI
-(set-frame-parameter (selected-frame) 'alpha '(90 90))
-(add-to-list 'default-frame-alist '(alpha 90 90))
+(set-frame-parameter (selected-frame) 'alpha '(80 80))
+(add-to-list 'default-frame-alist '(alpha 80 80))
 ;;
 ;; Line numbers
 (global-linum-mode 1)

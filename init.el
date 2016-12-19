@@ -71,7 +71,8 @@
     "navigation"
     "rust"
     "shell"
-    "ui"))
+    "ui"
+    "xml"))
 
 ;; Load customizations
 (dolist (c my-customizations)
@@ -89,15 +90,18 @@
    [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vector
    (vector "#ffffff" "#bf616a" "#B4EB89" "#ebcb8b" "#89AAEB" "#C189EB" "#89EBCA" "#232830"))
- '(custom-enabled-themes (quote (flatland)))
+ '(custom-enabled-themes (quote (nates-sweet-theme)))
  '(custom-safe-themes
    (quote
-    ("a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "0820d191ae80dcadc1802b3499f84c07a09803f2cb90b343678bdb03d225b26b" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "8453c6ba2504874309bdfcda0a69236814cefb860a528eb978b5489422cb1791" "d8f76414f8f2dcb045a37eb155bfaa2e1d17b6573ed43fb1d18b936febc7bbc2" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" default)))
+    ("4741c94001cdf4d552bd6bc64751f3dce7cfed37be51a2fd616f752757ce285d" "d05a7f507862ebeaebc34928604bc418c16bc6c10119ebc3a83e04dfa79789a1" "b7d89fda8259121e1f28685dea8fb2df4a57d1b78b346845e0e6265eea2531ea" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "0820d191ae80dcadc1802b3499f84c07a09803f2cb90b343678bdb03d225b26b" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "8453c6ba2504874309bdfcda0a69236814cefb860a528eb978b5489422cb1791" "d8f76414f8f2dcb045a37eb155bfaa2e1d17b6573ed43fb1d18b936febc7bbc2" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" default)))
  '(fci-rule-color "#343d46")
  '(hl-sexp-background-color "#1c1f26")
  '(neo-hidden-regexp-list
    (quote
     ("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.meta$")))
+ '(package-selected-packages
+   (quote
+    (occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
