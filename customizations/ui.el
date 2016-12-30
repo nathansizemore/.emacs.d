@@ -19,8 +19,8 @@
 (load-theme 'flatland t)
 ;;
 ;; Transparent background emacs-GUI
-(set-frame-parameter (selected-frame) 'alpha '(90 90))
-(add-to-list 'default-frame-alist '(alpha 90 90))
+(set-frame-parameter (selected-frame) 'alpha '(80 80))
+(add-to-list 'default-frame-alist '(alpha 80 80))
 ;;
 ;; Line numbers
 (global-linum-mode 1)
