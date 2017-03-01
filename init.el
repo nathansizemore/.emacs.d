@@ -32,6 +32,7 @@
     csharp-mode
     flatland-theme
     flycheck
+    glsl-mode
     go-mode
     jquery-doc
     js2-mode
@@ -42,6 +43,7 @@
     neotree
     php-mode
     rust-mode
+    shader-mode
     swift-mode
     systemd
     toml-mode
@@ -63,6 +65,7 @@
     "company"
     "csharp"
     "editing"
+    "hlsl"
     "html"
     "javascript"
     "markdown"
@@ -70,6 +73,7 @@
     "nasm"
     "navigation"
     "rust"
+    "shaderlab"
     "shell"
     "ui"
     "xml"))
@@ -79,7 +83,7 @@
   (load (concat my-customizations-folder c ".el")))
 
 ;; Stupid Unreal and .h files
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+;; (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 ;; Tooltips are stupid
 (tooltip-mode nil)
@@ -96,7 +100,7 @@
  '(custom-enabled-themes (quote (flatland)))
  '(custom-safe-themes
    (quote
-    ("5999e12c8070b9090a2a1bbcd02ec28906e150bb2cdce5ace4f965c76cf30476" "4741c94001cdf4d552bd6bc64751f3dce7cfed37be51a2fd616f752757ce285d" "d05a7f507862ebeaebc34928604bc418c16bc6c10119ebc3a83e04dfa79789a1" "b7d89fda8259121e1f28685dea8fb2df4a57d1b78b346845e0e6265eea2531ea" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "0820d191ae80dcadc1802b3499f84c07a09803f2cb90b343678bdb03d225b26b" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "8453c6ba2504874309bdfcda0a69236814cefb860a528eb978b5489422cb1791" "d8f76414f8f2dcb045a37eb155bfaa2e1d17b6573ed43fb1d18b936febc7bbc2" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" default)))
+    ("889a93331bc657c0f05a04b8665b78b3c94a12ca76771342cee27d6605abcd0e" "5999e12c8070b9090a2a1bbcd02ec28906e150bb2cdce5ace4f965c76cf30476" "4741c94001cdf4d552bd6bc64751f3dce7cfed37be51a2fd616f752757ce285d" "d05a7f507862ebeaebc34928604bc418c16bc6c10119ebc3a83e04dfa79789a1" "b7d89fda8259121e1f28685dea8fb2df4a57d1b78b346845e0e6265eea2531ea" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "0820d191ae80dcadc1802b3499f84c07a09803f2cb90b343678bdb03d225b26b" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "8453c6ba2504874309bdfcda0a69236814cefb860a528eb978b5489422cb1791" "d8f76414f8f2dcb045a37eb155bfaa2e1d17b6573ed43fb1d18b936febc7bbc2" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" default)))
  '(fci-rule-color "#343d46")
  '(hl-sexp-background-color "#1c1f26")
  '(neo-hidden-regexp-list
@@ -104,7 +108,7 @@
     ("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.meta$")))
  '(package-selected-packages
    (quote
-    (tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
+    (shader-mode tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
