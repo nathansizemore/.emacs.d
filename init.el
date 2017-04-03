@@ -25,25 +25,18 @@
 ;; Packages that must exist
 (defvar my-packages
   '(arduino-mode
-    cargo
     cmake-mode
-    company
-    company-tern
     csharp-mode
     flatland-theme
-    flycheck
-    glsl-mode
     go-mode
     jquery-doc
     js2-mode
     llvm-mode
     markdown-mode
-    multi
     nasm-mode
     neotree
     php-mode
     rust-mode
-    shader-mode
     swift-mode
     systemd
     toml-mode
@@ -62,10 +55,8 @@
 ;; Customizations
 (defvar my-customizations
   '("c"
-    "company"
     "csharp"
     "editing"
-    "hlsl"
     "html"
     "javascript"
     "markdown"
@@ -73,7 +64,6 @@
     "nasm"
     "navigation"
     "rust"
-    "shaderlab"
     "shell"
     "ui"
     "xml"))
