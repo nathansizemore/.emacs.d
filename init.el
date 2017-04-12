@@ -66,7 +66,8 @@
     "rust"
     "shell"
     "ui"
-    "xml"))
+    "xml"
+    "yaml"))
 
 ;; Load customizations
 (dolist (c my-customizations)
