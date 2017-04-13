@@ -26,7 +26,6 @@
 (defvar my-packages
   '(arduino-mode
     cmake-mode
-;;    csharp-mode
     flatland-theme
     go-mode
     jquery-doc

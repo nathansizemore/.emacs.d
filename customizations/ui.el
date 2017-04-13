@@ -32,7 +32,5 @@
 ;; Column numbers
 (setq column-number-mode t)
 ;;
-;; Window size
-(setq frame-resize-pixelwise t)
-(dotimes (n 3)
-  (toggle-frame-maximized))
+;; Initial starting size
+(setq initial-frame-alist '((width . 125)(height . 45)))
