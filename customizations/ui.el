@@ -33,4 +33,5 @@
 (setq column-number-mode t)
 ;;
 ;; Initial starting size
+(setq frame-resize-pixelwise t)
 (setq initial-frame-alist '((width . 125)(height . 45)))
