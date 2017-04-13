@@ -37,6 +37,7 @@
     neotree
     php-mode
     rust-mode
+    scss-mode
     shader-mode
     swift-mode
     systemd
