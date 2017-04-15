@@ -57,7 +57,7 @@
 ;; Customizations
 (defvar my-customizations
   '("c"
-    "csharp"
+;;    "csharp"
     "editing"
     "html"
     "javascript"
