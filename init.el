@@ -26,6 +26,7 @@
 (defvar my-packages
   '(arduino-mode
     cmake-mode
+    csharp-mode
     flatland-theme
     go-mode
     jquery-doc
@@ -36,6 +37,7 @@
     neotree
     php-mode
     rust-mode
+    shader-mode
     swift-mode
     systemd
     toml-mode
@@ -63,6 +65,7 @@
     "nasm"
     "navigation"
     "rust"
+    "shader"
     "shell"
     "ui"
     "xml"
