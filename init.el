@@ -68,6 +68,7 @@
     "shader"
     "shell"
     "ui"
+    "web"
     "xml"
     "yaml"))
 
