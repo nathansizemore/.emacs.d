@@ -5,8 +5,12 @@
 (setq user-full-name "Nathan Sizemore")
 (setq user-mail-address "nathanrsizemore@gmail.com")
 
-;; Define package repositories
+;; Package management
 (require 'package)
+;; Local
+(add-to-list 'load-path "~/development/etc/emacs-neotree")
+(require 'neotree)
+;; Repositories
 (add-to-list 'package-archives
 	     '("gnu" . "http://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives
@@ -34,7 +38,7 @@
     llvm-mode
     markdown-mode
     nasm-mode
-    neotree
+;;    neotree ;; Currently broken
     php-mode
     rust-mode
     scss-mode
