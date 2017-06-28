@@ -9,7 +9,7 @@
   (scroll-bar-mode -1))
 ;; Font stuff
 (set-face-attribute 'default nil :font "Ubuntu Mono")
-(set-face-attribute 'default nil :height 160)
+(set-face-attribute 'default nil :height 120)
 (setq-default line-spacing 0.1)
 ;;
 ;; Turn of blinking and bell
@@ -34,4 +34,4 @@
 ;;
 ;; Initial starting size
 (setq frame-resize-pixelwise t)
-(setq initial-frame-alist '((width . 125)(height . 35)))
+(setq initial-frame-alist '((width . 119)(height . 50)))

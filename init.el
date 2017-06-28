@@ -8,7 +8,7 @@
 ;; Package management
 (require 'package)
 ;; Local
-(add-to-list 'load-path "~/development/etc/emacs-neotree")
+(add-to-list 'load-path "~/dev/opt/emacs-neotree")
 (require 'neotree)
 ;; Repositories
 (add-to-list 'package-archives
@@ -38,7 +38,6 @@
     llvm-mode
     markdown-mode
     nasm-mode
-;;    neotree ;; Currently broken
     php-mode
     rust-mode
     scss-mode

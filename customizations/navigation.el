@@ -3,7 +3,7 @@
 ;; Width
 (setq neo-window-width 25)
 ;; Default directory
-(neotree-dir "~/development")
+(neotree-dir "~/dev")
 ;; Launch empty scratch on start
 (switch-to-buffer-other-window "*scratch*")
 ;; Hot key for dir toggling
