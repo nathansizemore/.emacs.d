@@ -4,6 +4,7 @@
 (add-to-list 'auto-mode-alist (cons (rx ".ascx" eos) 'web-mode))
 (add-to-list 'auto-mode-alist (cons (rx ".cshtml" eos) 'web-mode))
 (add-to-list 'auto-mode-alist (cons (rx ".Master" eos) 'web-mode))
+(add-to-list 'auto-mode-alist (cons (rx ".php" eos) 'web-mode))
 
 (setq web-mode-engines-alist
       '(("razor"    . "\\.cshtml\\'")
