@@ -29,6 +29,7 @@
 ;; Packages that must exist
 (defvar my-packages
   '(arduino-mode
+    auto-complete
     cmake-mode
     csharp-mode
     flatland-theme
@@ -85,6 +86,11 @@
 ;; Tooltips are stupid
 (tooltip-mode nil)
 (setq show-help-function nil)
+
+;; Auto-complete init
+(ac-config-default)
+
+;; Emacs set shit below:
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
