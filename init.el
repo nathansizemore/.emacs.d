@@ -36,7 +36,6 @@
     go-mode
     jquery-doc
     js2-mode
-    llvm-mode
     markdown-mode
     nasm-mode
     php-mode
