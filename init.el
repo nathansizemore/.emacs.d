@@ -82,14 +82,9 @@
 ;; Stupid Unreal and .h files
 ;; (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
-;; Tooltips are stupid
-(tooltip-mode nil)
-(setq show-help-function nil)
-
-;; Auto-complete init
+;; Autocomplete
 (ac-config-default)
 
-;; Emacs set shit below:
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -113,7 +108,7 @@
     ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
  '(package-selected-packages
    (quote
-    (avk-emacs-themes github-theme hydandata-light-theme silkworm-theme shader-mode tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
+    (auto-complete avk-emacs-themes github-theme hydandata-light-theme silkworm-theme shader-mode tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
