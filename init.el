@@ -7,9 +7,7 @@
 
 ;; Package management
 (require 'package)
-;; Local
-(add-to-list 'load-path "~/dev/opt/emacs-neotree")
-(require 'neotree)
+
 ;; Repositories
 (add-to-list 'package-archives
 	     '("gnu" . "http://elpa.gnu.org/packages/") t)
@@ -38,6 +36,7 @@
     js2-mode
     markdown-mode
     nasm-mode
+    neotree
     php-mode
     rust-mode
     scss-mode
@@ -52,6 +51,8 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+(require 'neotree)
 
 ;; Customizations folder
 (defvar my-customizations-folder
