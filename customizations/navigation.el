@@ -1,7 +1,7 @@
 ;; Navigation customizations
 
 ;; Width
-(setq neo-window-width 25)
+(setq neo-window-width 45)
 ;; Default directory
 (neotree-dir "~/dev")
 ;; Launch empty scratch on start

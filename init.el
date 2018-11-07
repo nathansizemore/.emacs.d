@@ -10,13 +10,12 @@
 
 ;; Repositories
 (add-to-list 'package-archives
-	     '("gnu" . "http://elpa.gnu.org/packages/") t)
+             '("gnu" . "http://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 
-;; Load and activate emacs packages
 (package-initialize)
 
 ;; Download list of packages available from ELPA (Emacs Lisp Package Archive).
@@ -30,15 +29,19 @@
     auto-complete
     cmake-mode
     csharp-mode
+    exec-path-from-shell
     flatland-theme
     go-mode
+    groovy-mode
     jquery-doc
     js2-mode
+    kotlin-mode
     markdown-mode
     nasm-mode
     neotree
     php-mode
     rust-mode
+    rjsx-mode
     scss-mode
     shader-mode
     swift-mode
@@ -61,8 +64,10 @@
 ;; Customizations
 (defvar my-customizations
   '("c"
+    "css"
     "editing"
     "html"
+    "java"
     "javascript"
     "markdown"
     "misc"
@@ -71,6 +76,7 @@
     "rust"
     "shader"
     "shell"
+    "term-fix"
     "ui"
     "web"
     "xml"
@@ -85,6 +91,11 @@
 
 ;; Autocomplete
 (ac-config-default)
+(global-auto-complete-mode t)
+
+;; PATH copying
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -109,7 +120,7 @@
     ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
  '(package-selected-packages
    (quote
-    (auto-complete avk-emacs-themes github-theme hydandata-light-theme silkworm-theme shader-mode tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
+    (rjsx-mode auto-complete avk-emacs-themes github-theme hydandata-light-theme silkworm-theme shader-mode tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
