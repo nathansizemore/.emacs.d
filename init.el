@@ -39,6 +39,7 @@
     markdown-mode
     nasm-mode
     neotree
+    ng2-mode
     php-mode
     rust-mode
     rjsx-mode
@@ -47,6 +48,7 @@
     swift-mode
     systemd
     toml-mode
+    typescript-mode
     web-mode
     yaml-mode))
 
@@ -56,6 +58,7 @@
     (package-install p)))
 
 (require 'neotree)
+(require 'ng2-mode)
 
 ;; Customizations folder
 (defvar my-customizations-folder
@@ -120,8 +123,9 @@
     ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
  '(package-selected-packages
    (quote
-    (rjsx-mode auto-complete avk-emacs-themes github-theme hydandata-light-theme silkworm-theme shader-mode tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
+    (typescript-mode rjsx-mode auto-complete avk-emacs-themes github-theme hydandata-light-theme silkworm-theme shader-mode tangotango-theme occidental-theme obsidian-theme yaml-mode web-mode toml-mode systemd swift-mode php-mode neotree nasm-mode multi markdown-mode llvm-mode js2-mode jquery-doc go-mode flycheck flatland-theme csharp-mode company-tern company cmake-mode cargo arduino-mode)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
+ '(typescript-indent-level 2)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
