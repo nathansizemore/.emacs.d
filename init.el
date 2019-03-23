@@ -1,7 +1,4 @@
-;; Nathan's bad-ass emacs config
-
-
-;; Human info
+;; Bad Ass™ emacs config
 (setq user-full-name "Nathan Sizemore")
 (setq user-mail-address "nathanrsizemore@gmail.com")
 
@@ -25,31 +22,17 @@
 
 ;; Packages that must exist
 (defvar my-packages
-  '(arduino-mode
-    auto-complete
-    cmake-mode
-    csharp-mode
+  '(company-tern
     exec-path-from-shell
     flatland-theme
-    go-mode
-    groovy-mode
-    jquery-doc
     js2-mode
-    kotlin-mode
+    js2-refactor
     markdown-mode
-    nasm-mode
     neotree
-    ng2-mode
-    php-mode
     rust-mode
-    rjsx-mode
-    scss-mode
-    shader-mode
-    swift-mode
     systemd
     toml-mode
-    typescript-mode
-    web-mode
+    xref-js2
     yaml-mode))
 
 ;; Iterate over the list of packages and install
@@ -58,7 +41,6 @@
     (package-install p)))
 
 (require 'neotree)
-(require 'ng2-mode)
 
 ;; Customizations folder
 (defvar my-customizations-folder
@@ -67,22 +49,16 @@
 ;; Customizations
 (defvar my-customizations
   '("c"
-    "css"
     "editing"
     "html"
-    "java"
     "javascript"
     "markdown"
     "misc"
-    "nasm"
     "navigation"
     "rust"
-    "shader"
     "shell"
     "term-fix"
     "ui"
-    "web"
-    "xml"
     "yaml"))
 
 ;; Load customizations
@@ -91,10 +67,6 @@
 
 ;; Stupid Unreal and .h files
 ;; (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-
-;; Autocomplete
-(ac-config-default)
-(global-auto-complete-mode t)
 
 ;; PATH copying
 (when (memq window-system '(mac ns x))
