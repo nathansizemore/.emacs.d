@@ -1,12 +1,5 @@
-*~
-places
-\.recentf
-\.smex-items
-ido.last
-projectile-bookmarks.eld
-projectile.cache
-auto-save-list
-backups
-elpa/
-eshell
-ac-comphist.dat
+.cache/
+.emacs.d
+.lsp-session*
+.mc-lists.el
+session.*
