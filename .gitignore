@@ -1,5 +1,4 @@
 .cache/
 .emacs.d
 .lsp-session*
-.mc-lists.el
 session.*
