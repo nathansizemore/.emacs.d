@@ -6,3 +6,5 @@
 (add-to-list 'default-frame-alist '(alpha . (85 . 85)))
 
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(setq column-number-mode t)
+
