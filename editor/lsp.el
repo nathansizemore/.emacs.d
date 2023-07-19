@@ -4,7 +4,7 @@
   :custom
   (lsp-rust-analyzer-cargo-watch-command "check")
   (lsp-eldoc-render-all nil)
-  (lsp-idle-delay 0.25)
+  (lsp-idle-delay 0.2)
   ;; This controls the overlays that display type and other hints inline. Enable
   ;; / disable as you prefer. Well require a `lsp-workspace-restart' to have an
   ;; effect on open projects.
