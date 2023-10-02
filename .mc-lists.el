@@ -3,12 +3,22 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-lt-gt
         c-electric-semi&comma
+        electric-newline-and-maybe-indent
+        forward-sexp
+        ignore-preserving-kill-region
         indent-for-tab-command
+        multiple-cursors-mode
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        handle-switch-frame
         ignore
+        kill-region
         lsp-ui-doc--handle-mouse-movement
+        mouse-set-region
+        toggle-frame-fullscreen
+        yaml-electric-backspace
         ))

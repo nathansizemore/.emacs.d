@@ -34,6 +34,7 @@
   (concat user-emacs-directory "lang/"))
 (defvar lang-scripts
   '("c"
+    "markdown"
     "rust"
     "yaml"))
 (dolist (c lang-scripts)

@@ -1,8 +1,7 @@
 (use-package clang-format
   :ensure
   :config
-  (setq clang-format-style "file")
-  )
+  (setq clang-format-style "file"))
 
 (defun clang-format-save-hook-for-this-buffer ()
   "Create a buffer local save hook."
@@ -21,4 +20,3 @@
 (add-hook 'c-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
 (add-hook 'c++-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
 (add-hook 'glsl-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
-

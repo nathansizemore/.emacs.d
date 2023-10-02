@@ -1,6 +1,8 @@
 (use-package lsp-mode
   :ensure
   :commands lsp
+  :hook
+  ((python-mode . lsp))
   :custom
   (lsp-rust-analyzer-cargo-watch-command "check")
   (lsp-eldoc-render-all nil)
