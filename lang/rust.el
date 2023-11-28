@@ -14,7 +14,6 @@
               ("C-c C-c h" . lsp-ui-doc-glance))
   :config
   (setq lsp-eldoc-hook nil)
-  (setq lsp-enable-snippet nil)
   (setq lsp-enable-symbol-highlighting nil)
   (setq lsp-signature-auto-activate nil)
   (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook))
@@ -23,4 +22,3 @@
   (add-hook 'before-save-hook 'lsp-format-buffer nil t))
 
 (use-package toml-mode :ensure)
-

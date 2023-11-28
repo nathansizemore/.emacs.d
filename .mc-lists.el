@@ -3,6 +3,8 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-brace
+        c-electric-colon
         c-electric-lt-gt
         c-electric-semi&comma
         electric-newline-and-maybe-indent
@@ -10,6 +12,7 @@
         ignore-preserving-kill-region
         indent-for-tab-command
         multiple-cursors-mode
+        switch-to-buffer
         ))
 
 (setq mc/cmds-to-run-once

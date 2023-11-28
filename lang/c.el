@@ -1,22 +1,30 @@
-(use-package clang-format
-  :ensure
+(use-package cmake-mode
+  :ensure t
+  :mode ("CMakeLists\\.txt\\'" "\\.cmake\\'")
   :config
-  (setq clang-format-style "file"))
+)
 
-(defun clang-format-save-hook-for-this-buffer ()
-  "Create a buffer local save hook."
-  (add-hook 'before-save-hook
-            (lambda ()
-              (when (locate-dominating-file "." ".clang-format")
-                (clang-format-buffer))
-              ;; Continue to save.
-              nil)
-            nil
-            ;; Buffer local hook.
-            t))
 
-(add-hook 'c-mode-hook 'lsp)
-(add-hook 'c++-mode-hook 'lsp)
-(add-hook 'c-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
-(add-hook 'c++-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
-(add-hook 'glsl-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
+(use-package clang-format
+  :ensure t
+  :config
+  (setq clang-format-style-option "file")
+
+  (defun my-clang-format-buffer ()
+    (interactive)
+    (when (or (eq major-mode 'c-mode) (eq major-mode 'c++-mode))
+      (clang-format-buffer)))
+
+  (add-hook 'before-save-hook 'my-clang-format-buffer))
+
+(add-hook 'c-mode-hook (lambda ()
+                           (setq indent-tabs-mode nil)
+                           (setq tab-width 4)
+                           (setq standard-indent 4)
+                           (setq c-basic-offset 4)))
+
+(add-hook 'c++-mode-hook (lambda ()
+                           (setq indent-tabs-mode nil)
+                           (setq tab-width 4)
+                           (setq standard-indent 4)
+                           (setq c-basic-offset 4)))

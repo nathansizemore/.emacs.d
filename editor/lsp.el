@@ -2,9 +2,11 @@
   :ensure
   :commands lsp
   :hook
-  ((python-mode . lsp))
+  ((c-mode . lsp)
+   (c++-mode . lsp)
+   (python-mode . lsp))
   :custom
-  (lsp-rust-analyzer-cargo-watch-command "check")
+  (lsp-rust-analyzer-cargo-watch-command "build")
   (lsp-eldoc-render-all nil)
   (lsp-idle-delay 0.2)
   ;; This controls the overlays that display type and other hints inline. Enable
