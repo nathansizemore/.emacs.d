@@ -15,7 +15,6 @@
           treemacs-file-extension-regex            treemacs-last-period-regex-value
           treemacs-file-follow-delay               0.2
           treemacs-file-name-transformer           #'identity
-          treemacs-follow-after-init               t
           treemacs-expand-after-init               t
           treemacs-find-workspace-method           'find-for-file-or-pick-first
           treemacs-git-command-pipe                ""
@@ -48,8 +47,8 @@
           treemacs-sorting                         'alphabetic-asc
           treemacs-select-when-already-in-treemacs 'move-back
           treemacs-space-between-root-nodes        t
-          treemacs-tag-follow-cleanup              t
-          treemacs-tag-follow-delay                1.5
+          ;; treemacs-tag-follow-cleanup              t
+          ;; treemacs-tag-follow-delay                1.5
           treemacs-text-scale                      nil
           treemacs-user-mode-line-format           nil
           treemacs-user-header-line-format         nil
@@ -60,20 +59,10 @@
           treemacs-workspace-switch-cleanup        nil)
 
     (treemacs-resize-icons 10)
-    (treemacs-follow-mode t)
+    (treemacs-follow-mode -1)
     (treemacs-filewatch-mode t)
     (treemacs-fringe-indicator-mode 'always)
     (treemacs-git-mode -1)
-    ;; (when treemacs-python-executable
-    ;;   (treemacs-git-commit-diff-mode t))
-
-    ;; (pcase (cons (not (null (executable-find "git")))
-    ;;              (not (null treemacs-python-executable)))
-    ;;   (`(t . t)
-    ;;    (treemacs-git-mode 'deferred))
-    ;;   (`(t . _)
-    ;;    (treemacs-git-mode 'simple)))
-
     (treemacs-hide-gitignored-files-mode nil))
   :bind
   (:map global-map

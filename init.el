@@ -38,6 +38,7 @@
     "glsl"
     "markdown"
     "rust"
+    "sql"
     "yaml"))
 (dolist (c lang-scripts)
   (load (concat lang-dir c ".el")))
@@ -57,7 +58,7 @@
  '(custom-safe-themes
    '("eb122e1df607ee9364c2dfb118ae4715a49f1a9e070b9d2eb033f1cefd50a908" default))
  '(package-selected-packages
-   '(tree-sitter-langs tree-sitter treemacs rust-mode flatland-theme)))
+   '(gnu-elpa-keyring-update tree-sitter-langs tree-sitter treemacs rust-mode flatland-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -29,3 +29,28 @@
   (lsp-ui-peek-always-show nil)
   (lsp-ui-sideline-show-hover nil)
   (lsp-ui-doc-enable t))
+
+(use-package dap-mode
+  :ensure
+  :config
+  (dap-ui-mode)
+  (dap-ui-controls-mode 1)
+
+  (require 'dap-cpptools)
+  (dap-cpptools-setup)
+  (dap-register-debug-template "Rust::CppTools Run Configuration"
+                               (list :type "cppdbg"
+                                     :request "launch"
+                                     :name "Rust::Run"
+                                     :MIMode "gdb"
+                                     :miDebuggerPath "rust-gdb"
+                                     :environment []
+                                     :program "${workspaceFolder}/target/debug/REPLACETHIS"
+                                     :cwd "${workspaceFolder}"
+                                     :console "external"
+                                     :dap-compilation "cargo build"
+                                     :dap-compilation-dir "${workspaceFolder}")))
+
+(with-eval-after-load 'dap-mode
+  ;; (setq dap-default-terminal-kind "integrated")
+  (dap-auto-configure-mode +1))

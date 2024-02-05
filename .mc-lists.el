@@ -11,6 +11,7 @@
         forward-sexp
         ignore-preserving-kill-region
         indent-for-tab-command
+        markdown-outdent-or-delete
         multiple-cursors-mode
         switch-to-buffer
         ))
