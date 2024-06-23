@@ -8,19 +8,22 @@
         c-electric-lt-gt
         c-electric-semi&comma
         electric-newline-and-maybe-indent
+        end-of-buffer
         forward-sexp
         ignore-preserving-kill-region
         indent-for-tab-command
+        keyboard-escape-quit
+        kill-region
         markdown-outdent-or-delete
         multiple-cursors-mode
         switch-to-buffer
+        yaml-electric-dash-and-dot
         ))
 
 (setq mc/cmds-to-run-once
       '(
         handle-switch-frame
         ignore
-        kill-region
         lsp-ui-doc--handle-mouse-movement
         mouse-set-region
         toggle-frame-fullscreen

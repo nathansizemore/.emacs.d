@@ -4,7 +4,7 @@
 
 (require 'package)
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
@@ -37,6 +37,7 @@
     "dockerfile"
     "glsl"
     "markdown"
+    "proto"
     "rust"
     "sql"
     "yaml"))
@@ -58,7 +59,7 @@
  '(custom-safe-themes
    '("eb122e1df607ee9364c2dfb118ae4715a49f1a9e070b9d2eb033f1cefd50a908" default))
  '(package-selected-packages
-   '(gnu-elpa-keyring-update tree-sitter-langs tree-sitter treemacs rust-mode flatland-theme)))
+   '(cmake-mode gnu-elpa-keyring-update tree-sitter-langs tree-sitter treemacs rust-mode flatland-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
