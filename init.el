@@ -4,7 +4,7 @@
 
 (require 'package)
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
@@ -34,8 +34,11 @@
   (concat user-emacs-directory "lang/"))
 (defvar lang-scripts
   '("c"
+    "dart"
     "dockerfile"
     "glsl"
+    "gn"
+    "go"
     "markdown"
     "proto"
     "rust"

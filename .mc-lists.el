@@ -16,6 +16,7 @@
         kill-region
         markdown-outdent-or-delete
         multiple-cursors-mode
+        sgml-slash
         switch-to-buffer
         yaml-electric-dash-and-dot
         ))

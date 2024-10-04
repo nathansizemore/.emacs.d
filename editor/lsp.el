@@ -4,6 +4,7 @@
   :hook
   ((c-mode . lsp)
    (c++-mode . lsp)
+   (go-mode . lsp)
    (python-mode . lsp))
   :custom
   (lsp-rust-analyzer-cargo-watch-command "build")
