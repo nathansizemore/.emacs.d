@@ -14,19 +14,18 @@
         indent-for-tab-command
         keyboard-escape-quit
         kill-region
+        lsp-ui-doc--handle-mouse-movement
         markdown-outdent-or-delete
         multiple-cursors-mode
         sgml-slash
+        sp-backward-delete-char
         switch-to-buffer
+        yaml-electric-backspace
         yaml-electric-dash-and-dot
         ))
 
 (setq mc/cmds-to-run-once
       '(
-        handle-switch-frame
         ignore
-        lsp-ui-doc--handle-mouse-movement
-        mouse-set-region
-        toggle-frame-fullscreen
-        yaml-electric-backspace
+        undo-redo
         ))
