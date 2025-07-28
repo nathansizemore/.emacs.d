@@ -21,4 +21,13 @@
 (defun rk/rustic-mode-hook ()
   (add-hook 'before-save-hook 'lsp-format-buffer nil t))
 
-(use-package toml-mode :ensure)
+(use-package toml-mode
+  :ensure
+  :hook (toml-mode . (lambda ()
+                       ;; don’t insert literal TAB characters
+                       (setq-local indent-tabs-mode nil)
+                       ;; treat a “tab” as four spaces
+                       (setq-local tab-width 4)
+                       ;; if toml-mode provides toml-indent-offset, force it to 4
+                       (when (boundp 'toml-indent-offset)
+                         (setq-local toml-indent-offset 4)))))

@@ -12,9 +12,16 @@
   (package-install 'use-package))
 (eval-when-compile (require 'use-package))
 
-(use-package exec-path-from-shell :ensure)
-(when (memq window-system '(mac ns x))
+(use-package exec-path-from-shell
+  :ensure t
+  :custom
+  ;; start bash as interactive so it reads ~/.bashrc
+  (exec-path-from-shell-arguments '("-i"))
+  ;; import PATH, MANPATH, *and* your DS_GL_PAT
+  (exec-path-from-shell-variables '("PATH" "MANPATH" "DS_GL_PAT"))
+  :config
   (exec-path-from-shell-initialize))
+
 
 (defvar editor-dir
   (concat user-emacs-directory "editor/"))
@@ -43,6 +50,8 @@
     "proto"
     "rust"
     "sql"
+    "terraform"
+    "typescript"
     "yaml"))
 (dolist (c lang-scripts)
   (load (concat lang-dir c ".el")))
@@ -52,6 +61,7 @@
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
                  (concat user-emacs-directory "backups")))))
+(setq create-lockfiles nil)
 
 (use-package exec-path-from-shell
   :ensure t

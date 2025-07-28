@@ -5,5 +5,4 @@ session.*
 .mc-lists.el
 .extension/
 tree-sitter/
-
-
+.dap-breakpoints
